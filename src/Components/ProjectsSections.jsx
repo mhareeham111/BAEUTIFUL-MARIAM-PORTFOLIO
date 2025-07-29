@@ -1,44 +1,45 @@
-import { ArrowRight, ExternalLink, Github } from 'lucide-react';
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { Project1, Project2, Project3 } from "../../public";
 
 const projects = [
   {
     id: 1,
-    title: 'SaaS Landing Page',
-    description: 'A beautiful landing page app using React and Tailwind.',
-    image: 'public/Projects/project 1.jpg',
-    tags: ['React', 'TailwindCSS', 'Supabase'],
-    demoUrl: '#',
-    githubUrl: '#',
+    title: "SaaS Landing Page",
+    description: "A beautiful landing page app using React and Tailwind.",
+    image: Project1,
+    tags: ["React", "TailwindCSS", "Supabase"],
+    demoUrl: "#",
+    githubUrl: "#",
   },
   {
     id: 2,
-    title: 'Orbit Analytics Dashboard',
+    title: "Orbit Analytics Dashboard",
     description:
-      'Interactive analytics dashboard with data visualization and filtering capabilities.',
-    image: 'public/Projects/project 2.avif',
-    tags: ['TypeScript', 'D3.js', 'Next.js'],
-    demoUrl: '#',
-    githubUrl: '#',
+      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+    image: Project2,
+    tags: ["TypeScript", "D3.js", "Next.js"],
+    demoUrl: "#",
+    githubUrl: "#",
   },
   {
     id: 3,
-    title: 'E-commerce Platform',
+    title: "E-commerce Platform",
     description:
-      'Full-featured e-commerce platform with user authentication and payment processing.',
-    image: 'public/Projects/project 3.webp',
-    tags: ['React', 'Node.js', 'Stripe'],
-    demoUrl: '#',
-    githubUrl: '#',
+      "Full-featured e-commerce platform with user authentication and payment processing.",
+    image: Project3,
+    tags: ["React", "Node.js", "Stripe"],
+    demoUrl: "#",
+    githubUrl: "#",
   },
 ];
 
-export const ProjectsSections = () => {
+export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="continer mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {''}
-          Featured <span className="text-primary">Projects</span>
+          {" "}
+          Featured <span className="text-primary"> Projects </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -50,7 +51,7 @@ export const ProjectsSections = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -69,11 +70,10 @@ export const ProjectsSections = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
@@ -98,7 +98,11 @@ export const ProjectsSections = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a className="cosmic-button w-fit flex items-center mx-auto gap-2" target="_blank" href="https://github.com/machadop1407">
+          <a
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+            href="https://github.com/machadop1407"
+          >
             Check My Github <ArrowRight size={16} />
           </a>
         </div>
