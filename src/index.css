@@ -64,24 +64,24 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background:497 80% 98%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 575 0% 100%;
 
-    --primary: 250 47% 60%;
+    --primary:250 47% 60% ;
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
   }
 
   .dark {
-    --background: 222 47% 4%;
+    --background: 690 47% 4%;
     --foreground: 213 31% 91%;
 
-    --card: 222 47% 8%;
+    --card:280 67% 30%;
 
-    --primary: 250 65% 65%;
+    --primary: 240 65% 65%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
@@ -139,7 +139,7 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+  @apply px-6 py-2 rounded-full bg-purple-700 text-primary-foreground font-medium 
          transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
          hover:scale-105 active:scale-95;
 }
@@ -149,10 +149,10 @@
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
-@utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+/* @utility meteor {
+  @apply absolute bg-linear-to-r from-blue-950 via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
-}
+} */
 
 #root {
   max-width: 100%;
