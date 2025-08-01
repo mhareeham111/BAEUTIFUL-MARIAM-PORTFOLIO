@@ -11,8 +11,8 @@ import { Footer } from "../Components/Footer";
 export const Home = () => {
     return (
          <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-{  /* Theme Toggle */   }
-{/* <ThemeToggle className ="hidden lg:block"/> */}
+{/* {  /* Theme Toggle } */}
+ <ThemeToggle />
 {  /*  Background Effect */   }
 <StarBackground/>
  {  /*  Navbar*/   }
